@@ -2,7 +2,7 @@ package ch.mse.app.types.path
 
 class Outer {
   class Inner
-  def put(inner: this.Inner) {}
+  def put(inner: this.Inner): Unit = {}
 }
 
 object Outer {

@@ -6,7 +6,8 @@ class Fraction(n: BigInt, d: BigInt) {
   val numer = n / (g * d.signum)
   val denom = d / (g * d.signum)
   def *(other: Fraction) = new Fraction(numer * other.numer, denom * other.denom)
-  override def toString = numer + " / " + denom;
+  def /(other: Fraction) = new Fraction(numer * other.denom, denom * other.numer)
+  override def toString = numer.toString + " / " + denom;
 }
 
 object Fraction {

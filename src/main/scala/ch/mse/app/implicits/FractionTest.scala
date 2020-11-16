@@ -10,12 +10,3 @@ object FractionTest {
 	  println(3 * f2)
 	}
 }
-
-/*
-cd C:\Documents\Kurse\AdvancedProgrammingParadigms\Teaching\app\10_Implicits\out\production\classes
-scala
-import scala.language.implicitConversions
-
-import ch.mse.app.implicits.Fraction._
-import ch.mse.app.implicits.Fraction
-*/
